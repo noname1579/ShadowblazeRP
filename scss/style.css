@@ -1,0 +1,158 @@
+@import url(variables.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(49, 40, 40);
+}
+
+.header-container {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.header-container .logo {
+  margin-right: 15%;
+  margin-left: 6%;
+}
+.header-container .btns-header a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 0 30px;
+  color: rgb(146, 140, 140);
+}
+.header-container .donate-btn {
+  margin-left: 25%;
+  width: 200px;
+  height: 50px;
+  border-radius: 3rem;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  color: #fff;
+  margin: 5% 12%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+main .main-text h1 {
+  font-size: 55px;
+}
+main .main-text p {
+  margin-top: 4%;
+  font-size: 30px;
+  line-height: 2.8rem;
+  text-transform: none;
+}
+main .main-text .main-page-trailer {
+  display: flex;
+  align-items: center;
+  margin: 5% 0;
+}
+main .main-text .main-page-trailer h2 {
+  font-size: 20px;
+  margin-left: 2%;
+}
+main .main-text .play-btn {
+  width: 400px;
+  height: 100px;
+  border-radius: 3rem;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+main .main-text .requirements {
+  text-transform: none;
+  margin: 3% 0;
+}
+main .main-text .requirements a {
+  color: rgb(126, 126, 126);
+  font-size: 18px;
+}
+
+.about {
+  font-family: "Roboto", sans-serif;
+}
+.about .about-project h1 {
+  color: rgb(146, 140, 140);
+  font-size: 35px;
+  text-align: center;
+}
+.about .about-project .right {
+  margin-left: 50%;
+}
+.about .about-project .left {
+  margin-right: 28%;
+}
+.about .about-project .about-project-section {
+  display: flex;
+  align-items: center;
+  margin-top: 16%;
+  padding: 0 15%;
+  line-height: 2.1rem;
+}
+.about .about-project .about-project-section .about-project-section-text h2 {
+  color: rgb(209, 48, 48);
+  font-size: 36px;
+  margin-bottom: 3%;
+}
+.about .about-project .about-project-section .about-project-section-text p {
+  color: #fff;
+  font-size: 24px;
+}
+
+.left {
+  margin-right: 5%;
+}
+
+.galery {
+  margin: 8% 0;
+}
+.galery h1 {
+  color: rgb(146, 140, 140);
+  font-size: 35px;
+  text-align: center;
+}
+.galery .galery-photos {
+  text-align: center;
+  margin-top: 5%;
+}
+.galery .galery-photos img {
+  margin: 0 5%;
+}
+
+.contacts {
+  padding: 6% 10%;
+  font-family: "Roboto", sans-serif;
+  border-top: 5px solid rgb(71, 62, 62);
+}
+.contacts h1 {
+  color: rgb(209, 48, 48);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.contacts .contacts-menu {
+  display: flex;
+}
+.contacts h2 {
+  margin-top: 5%;
+  font-size: 20px;
+  color: rgb(112, 106, 106);
+  margin-right: 10%;
+}
+.contacts h2 p {
+  font-size: 24px;
+  margin-top: 1%;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

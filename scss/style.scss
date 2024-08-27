@@ -1,0 +1,201 @@
+@import url(variables.scss);
+
+$main-font: "Roboto", sans-serif;
+$main-color: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(49, 40, 40);
+}
+
+
+//  Header
+
+.header-container {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    .logo {
+        margin-right: 15%;
+        margin-left: 6%;
+    }
+
+    .btns-header {
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: $main-font;
+            padding: 0 30px;
+            color: rgb(146, 140, 140);
+        }
+    }
+
+    .donate-btn {
+        margin-left: 25%;
+        width: 200px;
+        height: 50px;
+        border-radius: 3rem;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+}
+
+// Main
+
+button {
+    cursor: pointer;
+}
+
+main {
+    color: $main-color;
+    margin: 5% 12%;
+    text-transform: uppercase;
+    font-family: $main-font;
+
+    .main-text {
+        h1 {
+            font-size: 55px;
+        }
+        
+        p {
+            margin-top: 4%;
+            font-size: 30px;
+            line-height: 2.8rem;
+            text-transform: none;
+        }
+
+        .main-page-trailer {
+            display: flex;
+            align-items: center;
+            margin: 5% 0;
+
+            a {
+
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-left: 2%;
+            }
+        }
+
+        .play-btn {
+            width: 400px;
+            height: 100px;
+            border-radius: 3rem;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+
+        .requirements {
+            text-transform: none;
+            margin: 3% 0;
+            a {
+                color: rgb(126, 126, 126);
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.about {
+    font-family: $main-font;
+
+    .about-project {
+        h1 {
+            color: rgb(146, 140, 140);
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .right {
+            margin-left: 50%;
+        }
+
+        .left {
+            margin-right: 28%;
+        }
+        
+        .about-project-section {
+            display: flex;
+            align-items: center;
+            margin-top: 16%;
+            padding: 0 15%;
+            line-height: 2.1rem;
+
+            .about-project-section-text {
+                h2 {
+                    color: rgb(209, 48, 48);
+                    font-size: 36px;
+                    margin-bottom: 3%;
+                }
+    
+                p {
+                    color: $main-color;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+.left {
+    margin-right: 5%;
+}
+
+.galery {
+    margin: 8% 0;
+
+    h1 {
+        color: rgb(146, 140, 140);
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .galery-photos {
+        text-align: center;
+        margin-top: 5%;
+
+        img {
+            margin: 0 5%;
+        }
+    }
+}
+
+.contacts {
+    padding: 6% 10%;
+    font-family: $main-font;
+    border-top: 5px solid rgb(71, 62, 62);
+
+    h1 {
+        color: rgb(209, 48, 48);
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: $main-font;
+    }
+
+    .contacts-menu {
+        display: flex;
+    }
+
+    h2 {
+        margin-top: 5%;
+        font-size: 20px;
+        color: rgb(112, 106, 106);
+        margin-right: 10%;
+
+        p {
+            font-size: 24px;
+            margin-top: 1%;
+            color: $main-color;
+        }
+    }
+}
