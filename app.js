@@ -1,5 +1,3 @@
-new WOW().init();
-
 $(function() {
     $( "#button" ).click(function() {
       $( "#button" ).addClass( "onclic", 250, validate);
