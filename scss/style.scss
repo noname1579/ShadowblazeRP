@@ -1,8 +1,9 @@
-@import url(variables.scss);
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 $main-font: "Roboto", sans-serif;
 $main-color: #fff;
+$title-color: rgb(179, 168, 168);
 
 * {
     margin: 0;
@@ -36,31 +37,16 @@ body {
             text-decoration: none;
             font-size: 20px;
             font-family: $main-font;
-            color: rgb(179, 168, 168);
+            color: $title-color;
             position: relative;
             margin-right: 70px;
             padding-bottom: 5px;
             opacity: 0.7;
         }
 
-        a::after {
-            position: absolute;
-            content: '';
-            left: 50%;
-            bottom: 0;
-            display: block;
-            width: 0;
-            height: 1px;
-            background: rgb(196, 187, 187);;
-            transition: 0.3s;
-            transform: translateX(-50%);
-        }
         a:hover {
             opacity: 1;
-        }
-
-        a:hover:after {
-            width: 100%;
+            color: rgb(209, 35, 58);
         }
     }
 
@@ -68,10 +54,10 @@ body {
         margin-left: 17%;
         width: 200px;
         height: 50px;
-        border-radius: 3rem;
-        font-size: 16px;
+        border-radius: 1.3rem;
+        font-size: 15px;
         text-transform: uppercase;
-        background-color: gray;
+        background-color: rgb(148, 36, 36);
         color: $main-color;
         font-weight: 600;
         opacity: 0.8;
@@ -82,7 +68,11 @@ body {
     }
 }
 
-// Main
+.RPname {
+    color: rgb(235, 47, 47);
+    font-weight: 500;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5)
+}
 
 button {
     cursor: pointer;
@@ -99,13 +89,7 @@ main {
         h1 {
             font-size: 55px;
         }
-
-        .RPname {
-            color: rgb(235, 47, 47);
-            font-weight: 500;
-            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5)
-        }
-        
+  
         p {
             margin-top: 4%;
             font-size: 30px;
@@ -134,83 +118,96 @@ main {
         }
 
         .play-btn {
+            margin: 10% 0;
             width: 400px;
             height: 100px;
             border-radius: 3rem;
             font-size: 25px;
             text-transform: uppercase;
-            background-color: rgb(50, 139, 241);
+            background-color: rgb(187, 33, 46);
             color: $main-color;
             font-weight: 800;
-        }
-
-        .requirements {
-            text-transform: none;
-            margin: 5% 0 0;
-            a {
-                color: rgb(151, 142, 142);
-                font-size: 20px;
-            }
-        }
-
-        
+        }        
     }
 }
 
 .about {
     border-top: 5px solid rgb(71, 62, 62);
     margin-top: 4%;
-    padding-top: 5%;
+    padding: 10% 0;
     font-family: $main-font;
 
     .about-project {
+        text-align: center;
+        padding: 0 12%;
+
+        .advantages {
+            margin-top: 6%;
+            color: $title-color;
+
+            .advantages-title {
+                display: flex;
+                align-items: center;
+
+                .adv-img {
+                    margin-top: 10%;
+                    margin-right: 2%;
+                }
+
+                .adv-text {
+                    margin-top: 10%;
+                    line-height: 2.3rem;
+
+                    h3 {
+                        text-align: left;
+                        font-size: 42px;
+                        color: rgb(209, 35, 58);
+                    }
+    
+                    h4 {
+                        font-size: 23px;
+                        text-align: left;
+                        margin-top: 1.7%;
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+
         h1 {
-            color: rgb(146, 140, 140);
+            color: $title-color;
             font-size: 35px;
             text-align: center;
         }
 
-        .right {
-            margin-left: 50%;
-        }
-
-        .left {
-            margin-right: 28%;
-        }
-        
-        .about-project-section {
-            display: flex;
-            align-items: center;
-            margin-top: 16%;
-            padding: 0 15%;
-            line-height: 2.1rem;
-
-            .about-project-section-text {
-                h2 {
-                    color: rgb(209, 48, 48);
-                    font-size: 40px;
-                    margin-bottom: 3%;
-                }
-    
-                p {
-                    color: $main-color;
-                    font-size: 26px;
-                    margin-top: 8%;
-                }
-            }
+        p {
+            margin-top: 10%;
+            color: $main-color;
+            font-size: 26px;
+            line-height: 3rem;
+            margin-bottom: 15%;
         }
     }
 }
 
-.left {
-    margin-right: 5%;
+.news {
+    margin-top: 2%;
+    .news-posts {
+
+        h1 {
+            color: $title-color;
+            font-size: 35px;
+            text-align: center;
+        }
+
+    }
 }
 
 .galery {
     margin: 12% 0 6%;
 
     h1 {
-        color: rgb(146, 140, 140);
+        color: $title-color;
         font-size: 35px;
         text-align: center;
     }
@@ -233,12 +230,12 @@ main {
 }
 
 .contacts {
-    padding: 6% 10%;
+    padding: 4% 10%;
     font-family: $main-font;
     border-top: 5px solid rgb(71, 62, 62);
 
     h1 {
-        color: rgb(209, 48, 48);
+        color: rgb(235, 66, 66);
         font-size: 30px;
         text-transform: uppercase;
         font-family: $main-font;
@@ -246,12 +243,13 @@ main {
 
     .contacts-menu {
         display: flex;
+        align-items: center;
     }
 
     h2 {
         margin-top: 5%;
         font-size: 20px;
-        color: rgb(112, 106, 106);
+        color: $title-color;
         margin-right: 10%;
 
         p {
@@ -260,20 +258,20 @@ main {
             color: $main-color;
             display: flex;
             justify-content: space-between;            
-            padding: 0 3%; 
+            padding: 3% 1%; 
         }
     }
 }
 
 .btn {
     text-decoration: none;
-    border: 1px solid rgb(146, 148, 248);
+    border: 1px solid rgb(54, 47, 47);
     position: relative;
     overflow: hidden;
   }
   
   .btn:hover {
-    box-shadow: 1px 1px 25px 10px rgba(110, 201, 253, 0.4);
+    box-shadow: 1px 1px 25px 10px rgba(180, 16, 16, 0.822);
   }
   
   .btn:before {
@@ -286,10 +284,10 @@ main {
     background: linear-gradient(
       120deg,
       transparent,
-      rgba(146, 187, 248, 0.4),
+      rgba(189, 16, 68, 0.4),
       transparent
     );
-    transition: all 650ms;
+    transition: all 0.6s;
   }
   
   .btn:hover:before {
